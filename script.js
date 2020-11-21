@@ -33,3 +33,8 @@ function setErrorFor(input, message){
 
     formControl.className = 'form-control error'; //add error class
 }
+
+function setSuccessFor(input){
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
