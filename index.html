@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JS-Form</h1>
+    </header>
+    <section class="container">
+        <form id="myForm">
+            <h2>Subscribe</h2>
+            <div class="form-control success">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" id="name">
+                <small>Error message</small>
+            </div>
+            <div class="form-control error">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email" id="email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" id="password">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
