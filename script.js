@@ -36,6 +36,8 @@ function checkInputs(){
     }else{
         setSuccessFor(password);
     }
+
+    alert("Thanks for subscribe");
 }
 
 function setErrorFor(input, message){
