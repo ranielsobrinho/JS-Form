@@ -73,7 +73,10 @@ header{
 .form-control.error input{
     border-color: #e74c3c;
 }
-
+.form-control.error small{
+    visibility: visible;
+    color: red;
+}
 
 #myForm > button{
     background-color: #8d77c4;
