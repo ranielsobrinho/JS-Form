@@ -15,13 +15,21 @@ function checkInputs(){
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
-    if (nameValue === '') {
+    if(nameValue === '') {
+        //show error
+        //add error class
         setErrorFor(name, 'Name cannot be blank');
     } else{
+        //add succes class
         setSuccessFor(name);
     }
 }
 
 function setErrorFor(input, message){
-    
+    const formControl = input.parentElement; //.form-control
+    const small = formControl.querySelector('small');
+
+    small.innerText = message; // add error message inside small
+
+    formControl.className = 'form-control error'; //add error class
 }
